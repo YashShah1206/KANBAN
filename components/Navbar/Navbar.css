@@ -1,0 +1,96 @@
+.navbar {
+  padding-inline: 2rem;
+  border-bottom: 1px solid #ccc;
+  max-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text-color);
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+.dark {
+  background-color: #292c35;
+}
+.label {
+  width: 36px;
+  height: 11px !important;
+  background-color: #111;
+  display: flex;
+  border-radius: 40px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.5);
+}
+
+.ball {
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+/*  target the elemenent after the label*/
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: pink;
+}
+
+.fa-sun {
+  color: yellow;
+}
+
+
+
+
+
+
+
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #4caf50; /* Green background color */
+  color: #fff; /* Text color */
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+}
+
+.button-container button {
+  margin-right: 10px;
+  padding: 8px 16px;
+  background-color: #2196f3; /* Blue button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for color change */
+}
+
+.button-container button:hover {
+  background-color: #0d47a1; /* Dark blue hover background color */
+}
+
+.username {
+  margin-right: 30px; /* Increased margin between button and username */
+  font-weight: bold;
+  color: #f44336; /* Red username color */
+}
+
